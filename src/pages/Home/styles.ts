@@ -3,20 +3,23 @@ import styled from "styled-components";
 export const MainTitle = styled.main`
   padding-top: 5.875rem;
   gap: 3.5rem;
+  display: flex;
+  flex-direction: row;
   
   img {
     float: right;
+    display: flex;
+    margin-left: auto;
   }
 `
 
 export const TitleContainer = styled.div`
   
   max-width: 36.57rem;
-  float: left;
   display: flex;
   flex-direction: column;
+  flex-basis: 100%;
   
-
 
   h1 {
     font-family: "Baloo 2", sans-serif;
@@ -52,4 +55,37 @@ export const Article = styled.article`
     
   }
 
+`
+
+export const IntroContainer = styled.div`
+  font-family: "Roboto Light", sans-serif;
+  font-weight: 400;
+  color: ${(props) => props.theme['base-text']};
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 4.125rem;
+
+  div {
+    height: 2rem;
+    width: 50%;
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+    align-items: center;
+  }
+  
+  span{
+    position: relative;
+    height: 32px;
+    width: 32px;
+    align-items: center;
+    align-content: center;
+    
+    svg:last-child{
+      position: absolute;
+      left: 25%;
+      bottom: 25%;
+    }
+  }
 `

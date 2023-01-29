@@ -7,6 +7,8 @@ export const HeaderContainer = styled.header`
 
   img {
     height: 2.5rem;
+    margin-left: 0;
+    flex:1;
   }
 
   nav {
